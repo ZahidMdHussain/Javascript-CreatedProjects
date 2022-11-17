@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to right, #232526, #414345);;
+}
+h1{
+    background-color:rgba(0, 0, 0, .2);
+    padding: .5rem 1.5rem;
+    color: white;
+    width: 70%;
+}
+.screen{
+    cursor: pointer;
+    width: 70%;
+    height: 70%;
+    background-color: black !important;
+    border-radius: 2px;
+
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1rem;
+    background-color: rgba(0,0, 0, .3);
+    color: white;
+    border-radius: 2px;
+    width: 70%;
+}
+.control .btn{
+    border: 0;
+    background: transparent;
+    font-size: 2rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.control .fa-play{
+    color:rgb(0, 255, 0)
+}
+.control .fa-stop{
+    color: rgb(239, 66, 43);
+}
+.control .fa-pause{
+    color:#dedb0c
+}
+.control .timestamp{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+
+@media(max-width:800px) {
+    .screen, .control, h1{
+        width: 90%;
+    }
+    .screen{
+        height: 50%;
+    }
+}
+@media(max-width:400px) {
+    .screen, .control, h1{
+        width: 85%;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .screen{
+        height: 25%;
+    }
+    .control .btn{
+        font-size: 1.5rem;
+        margin-right: .5rem;
+    }
+}

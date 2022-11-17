@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎥Video Player</title>
+    <!-- External css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="progress.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Custom Video Player</h1>
+    <video
+      src="video/arcane.webm"
+      id="video"
+      class="screen"
+      poster="img/poster.jpg"
+    ></video>
+    <div class="control">
+      <button class="btn" id="play"><i class="fa-solid fa-play"></i></button>
+      <!-- <button class="btn" id="pouse"></button> -->
+      <button class="btn" id="reset"><i class="fa-solid fa-stop"></i></button>
+      <input
+        type="range"
+        id="progress"
+        class="progress"
+        min="0"
+        max="100"
+        step="0.1"
+        value="0"
+      />
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

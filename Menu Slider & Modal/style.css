@@ -1,0 +1,207 @@
+:root{
+    --modal-duration: .7s;
+    --primary-color: #008b8b;
+    --secondary-color: #3EB489;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Righteous', cursive; 
+    transition: .3s ease;
+}
+p, li{
+    font-family: 'Kalam', cursive;
+}
+
+
+nav{
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(152, 229, 229, 0.3);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 10;
+    transform: translateX(-100%);
+}
+nav .logo{
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+nav .logo img{
+    width: 120px;
+    border-radius: 50%;
+}
+
+nav ul{
+    margin-top: 1rem;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    font-family:'Righteous', cursive;
+    border-bottom: 1px solid rgba(152, 229, 229, 0.3);
+    padding:1.2rem 2rem;
+}
+
+nav ul li:first-of-type{
+    border-top: 1px solid rgba(152, 229, 229, 0.3);
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:#113d3d;
+    cursor: pointer;
+}
+
+body.show-nav{
+    transform: translate(250px);
+}
+header{
+    background-color: var(--primary-color);
+    padding: 3rem 2rem;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+header .toggle{
+    position: absolute;
+    left: 1.2rem;
+    top: 1.2rem;
+    border-radius: 4px;
+    border: 0;
+    background-color: #104c4c;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+header p{
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.btn, input[type='submit']{
+    padding: .7rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    border: 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: 'Righteous', cursive; 
+    margin-bottom: 1rem;
+}
+
+.btn:hover,input[type='submit']:hover{
+    color: #10704d;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+.contianer{
+    padding: 2rem 1.2rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.contianer h2{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+.contianer p, li{
+    font-size: 1.2rem;
+}
+.contianer p{
+    padding-top: 1rem;
+}
+.contianer ul{
+    padding: 1rem 0rem 1rem 3rem;
+}
+.modal-container{
+    background-color:rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.show-modal{
+    display: block;
+    animation: model-open var(--modal-duration);
+    transition: .3s ease;
+}
+.modal{
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    width: 400px;
+}
+.close-btn{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-header{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+.modal-content{
+    padding: 1.5rem 1rem;
+}
+
+.modal-content p{
+    font-size: 1.1rem;
+}
+.modal-form div{
+    margin: 1rem 0;
+}
+.modal-form label{
+    display: block;
+    margin-bottom: .3rem;
+}
+.modal-form .form-input{
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+@keyframes model-open {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(img/img-1.jpg) no-repeat center center/cover;
+}
+.add-task-container{
+    width: 500px;
+    background-color: rgba(149, 224, 237, 0.3);
+    padding: 1rem 2rem;
+    box-shadow: 0 0 4px gray;
+    border-radius: 12px;
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+input{
+    flex: 5;
+    padding: .2rem 1rem ;
+    font-size: 1.2rem;
+    border: 2px solid rgb(13, 143, 13) ;
+    outline: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+button{
+    flex: 1;
+    font-size: 1.2rem;
+    border: 1px solid green;
+    border-radius: 7px;
+    background-color: rgb(159, 238, 159);
+    color: rgb(24, 154, 24);
+    transition: .3s;
+}
+
+button:hover{
+    background-color: rgb(20, 158, 20);
+    color:#fff;
+    cursor: pointer;
+}
+
+#task-container{
+    display: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color:rgba(41, 220, 157, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 4px gray;
+    width: 500px;
+}
+
+.task{
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.task li{
+    list-style: none;
+    width: 80%;
+    font-size: 1.4rem;
+    color: green;
+    margin: .1rem .5rem;
+    word-wrap: break-word;
+}
+
+.task button{
+    flex: 1;
+    padding: 0 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.checked{
+    background-color: rgb(47, 183, 47);
+    color: rgb(198, 237, 198);
+    border: 2px solid green;
+}
+
+.checked:hover{
+    background-color: rgb(18, 121, 18);
+}
+
+.deleted{
+    background-color: rgb(227, 58, 58);
+    color: rgb(232, 166, 166);
+    border: 2px solid rgb(161, 12, 12);
+}
+.deleted:hover{
+    background-color: rgb(165, 26, 26);
+    color: rgb(232, 166, 166);
+}
