@@ -14,3 +14,6 @@ exchange money is online to server: https://moneyexchange-rate.netlify.app/
 
 ### Track Expense
 expense tracker is online to server: https://track-yourexpence.netlify.app/
+
+### FAQ 
+faq is online to server: https://thats-faq.netlify.app/
