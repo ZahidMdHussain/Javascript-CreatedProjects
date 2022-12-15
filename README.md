@@ -20,3 +20,6 @@ faq is online to server: https://thats-faq.netlify.app/
 
 ### Form validator
 form validator is online to server: https://validator-inputform.netlify.app/
+
+### Meal Finder
+meal finder is online to server: https://try-delicious.netlify.app/
