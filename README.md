@@ -23,3 +23,6 @@ form validator is online to server: https://validator-inputform.netlify.app/
 
 ### Meal Finder
 meal finder is online to server: https://try-delicious.netlify.app/
+
+### Modal Magnificent
+magnificent modal is online to server: https://magnificent-modal.netlify.app/
