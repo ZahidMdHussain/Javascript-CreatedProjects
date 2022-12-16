@@ -32,3 +32,6 @@ music player is online to server: https://playsome.netlify.app/
 
 ### my To-Do's
 to-dos is online to server: https://getit-done.netlify.app/
+
+### Video player
+video player is online to server: https://vidplay.netlify.app/
