@@ -26,3 +26,6 @@ meal finder is online to server: https://try-delicious.netlify.app/
 
 ### Modal Magnificent
 magnificent modal is online to server: https://magnificent-modal.netlify.app/
+
+### Music Player
+music player is online to server: https://playsome.netlify.app/
